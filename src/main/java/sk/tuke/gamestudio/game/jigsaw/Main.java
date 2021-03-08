@@ -1,4 +1,4 @@
-package sk.tuke.gamestudio.game.mines;
+/*package sk.tuke.gamestudio.game.mines;
 
 import sk.tuke.gamestudio.game.mines.consoleui.ConsoleUI;
 import sk.tuke.gamestudio.game.mines.core.Field;
@@ -9,3 +9,4 @@ public class Main {
         ConsoleUI ui = new ConsoleUI(field);
         ui.play();
     }
+*/
