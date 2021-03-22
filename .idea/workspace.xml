@@ -5,45 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bd1e43a-4887-4d01-857e-284cf99946be" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/consoleui/ConsoleUi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/ControlGameField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/GameField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/Playing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/WinnGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/entity/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/entity/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/jigsaw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/CommentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/CommentServiceJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/GameStudioException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/RatingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/RatingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/RatingServiceJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/ScoreException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/ScoreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/ScoreServiceJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gamestudio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamestudio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/Untitled Diagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Clue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Field.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/GameState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Generate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/TileState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/TileState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/GameState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/Number.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/TileState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/TileState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Input.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +68,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\simon\Desktop\gamestudio-4978\design" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\simon\Desktop\gamestudio-4978\design" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.jigsaw">
     <configuration name="ScoreServiceJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -220,7 +192,7 @@
       <workItem from="1616088581343" duration="5912000" />
       <workItem from="1616145930745" duration="553000" />
       <workItem from="1616146518312" duration="44971000" />
-      <workItem from="1616313561333" duration="43835000" />
+      <workItem from="1616313561333" duration="47102000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1615195058202</created>
@@ -250,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615212621343</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <created>1616412286740</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616412286740</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
