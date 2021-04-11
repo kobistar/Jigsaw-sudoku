@@ -1,5 +1,7 @@
-package sk.tuke.gamestudio.game.jigsaw.service;
-import sk.tuke.gamestudio.game.jigsaw.entity.Comment;
+package sk.tuke.gamestudio.service;
+
+import sk.tuke.gamestudio.entity.Comment;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,22 +14,25 @@ import java.util.List;
     );
      */
 
-public class CommentServiceJDBC implements CommentService{
-    private static final String URL = "jdbc:postgresql://localhost:5432/gamestudio-4978";
+public class CommentServiceJDBC implements CommentService {
+    private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
     private static final String USER = "postgres";
     private static final String PASSWORD = "awdrg153";
 
-    private static final String INSERT_SCORE = "INSERT INTO comment (game, player, comment, commentedon) VALUES (?, ?, ?, ?)";
-    private static final String SELECT_COMMENT = "SELECT game, player, comment, commentedon FROM comment Where game = ? ORDER BY commentedon DESC LIMIT 10";
+    private static final String INSERT_COMMENT = "INSERT INTO comment (game,username, comment, commented_on) VALUES (?, ?, ?, ?)";
+    private static final String SELECT_COMMENT = "SELECT game,username, comment, commented_on FROM comment Where game = ? ORDER BY commented_on DESC LIMIT 10";
+
+    public CommentServiceJDBC() {
+    }
 
     @Override
     public void addComment(Comment comment) throws CommentException {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            try(PreparedStatement ps = connection.prepareStatement(INSERT_SCORE)){
+            try(PreparedStatement ps = connection.prepareStatement(INSERT_COMMENT)){
                 ps.setString(1, comment.getGame());
-                ps.setString(2, comment.getPlayer());
+                ps.setString(2, comment.getUsername());
                 ps.setString(3, comment.getComment());
-                ps.setDate(4, new Date(comment.getCommentedOn().getTime()));
+                ps.setTimestamp(4, new Timestamp(comment.getCommentedOn().getTime()));
 
                 ps.executeUpdate();
             }

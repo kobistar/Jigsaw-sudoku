@@ -1,6 +1,6 @@
-package sk.tuke.gamestudio.game.jigsaw.service;
+package sk.tuke.gamestudio.service;
 
-public class ScoreException extends RuntimeException{
+public class ScoreException extends RuntimeException {
     public ScoreException(String message) {
         super(message);
     }
@@ -8,5 +8,4 @@ public class ScoreException extends RuntimeException{
     public ScoreException(String message, Throwable cause) {
         super(message, cause);
     }
-
 }

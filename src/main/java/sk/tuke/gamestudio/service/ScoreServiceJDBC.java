@@ -1,6 +1,6 @@
-package sk.tuke.gamestudio.game.jigsaw.service;
+package sk.tuke.gamestudio.service;
 
-import sk.tuke.gamestudio.game.jigsaw.entity.Score;
+import sk.tuke.gamestudio.entity.Score;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -19,38 +19,31 @@ import java.util.List;
 //SELECT player, game, points, playedon FROM score WHERE game = 'mines' ORDER BY points DESC LIMIT 10;
 
 public class ScoreServiceJDBC implements ScoreService{
-    public static final String URL = "jdbc:postgresql://localhost:5432/gamestudio-4978";
+    public static final String URL = "jdbc:postgresql://localhost:5432/postgres";
     public static final String USER = "postgres";
     public static final String PASSWORD = "awdrg153";
-    public static final String DELETE = "DELETE FROM score";
-    public static final String INSERT_SCORE = "INSERT INTO score (game, player, points, playedon) VALUES (?, ?, ?, ?)";
-    public static final String SELECT_SCORE = "SELECT game, player, points, playedon FROM score WHERE game = ? ORDER BY points DESC LIMIT 10;";
+    private static final String INSERT_SCORE = "INSERT INTO score (game, username, points, played_on) VALUES (?, ?, ?, ?)";
+    private static final String SELECT_SCORE = "SELECT game,username, points, played_on FROM score WHERE game = ? ORDER BY points DESC LIMIT 10";
+
+    public ScoreServiceJDBC() {
+    }
 
     @Override
     public void addScore(Score score) throws ScoreException {
-        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            try(PreparedStatement ps = connection.prepareStatement(INSERT_SCORE)){
-                ps.setString(1, score.getGame());
-                ps.setString(2, score.getPlayer());
-                ps.setInt(3, score.getPoints());
-                ps.setDate(4, new Date(score.getPlayedOn().getTime()));
+        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement ps = connection.prepareStatement(INSERT_SCORE)
+        ) {
+            ps.setString(1, score.getGame());
+            ps.setString(2, score.getUsername());
+            ps.setInt(3, score.getPoints());
+            ps.setTimestamp(4, new Timestamp(score.getPlayedOn().getTime()));
 
-                ps.executeUpdate();
-            }
+            ps.executeUpdate();
         } catch (SQLException e) {
             throw new ScoreException("Error saving score", e);
         }
     }
-    @Override
-    public void reset() throws ScoreException{
-        try(Connection connection =  DriverManager.getConnection(URL, USER, PASSWORD);
-            Statement statement = connection.createStatement();
-        ){
-            statement.executeUpdate(DELETE);
-        }catch (SQLException e){
-            throw new GameStudioException("Problem deleting score: ",e);
-        }
-    }
+
     @Override
     public List<Score> getBestScores(String game) throws ScoreException {
         List<Score> scores = new ArrayList<>();
@@ -60,6 +53,7 @@ public class ScoreServiceJDBC implements ScoreService{
                 try(ResultSet rs = ps.executeQuery()) {
                     while(rs.next()) {
                         Score score = new Score(
+                                // rs.getInt(1),
                                 rs.getString(1),
                                 rs.getString(2),
                                 rs.getInt(3),
@@ -73,13 +67,6 @@ public class ScoreServiceJDBC implements ScoreService{
             throw new ScoreException("Error loading score", e);
         }
         return scores;
-    }
-
-    public static void main(String[] args) throws Exception {
-        Score score = new Score("mines", "jaro", 100, new java.util.Date());
-        ScoreService scoreService = new ScoreServiceJDBC();
-        //scoreService.addScore(score);
-        System.out.println(scoreService.getBestScores("mines"));
     }
 }
 

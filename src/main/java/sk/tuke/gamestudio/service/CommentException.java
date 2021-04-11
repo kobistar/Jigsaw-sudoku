@@ -1,5 +1,4 @@
-package sk.tuke.gamestudio.game.jigsaw.service;
-
+package sk.tuke.gamestudio.service;
 
 public class CommentException extends Exception {
     public CommentException(String message) {
@@ -10,3 +9,4 @@ public class CommentException extends Exception {
         super(message, cause);
     }
 }
+

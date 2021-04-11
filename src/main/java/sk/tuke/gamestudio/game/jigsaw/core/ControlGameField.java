@@ -2,6 +2,7 @@ package sk.tuke.gamestudio.game.jigsaw.core;
 
 public class ControlGameField {
     private GameField gameField;
+
     private int[][] puzzle = new int[9][9];
 
     public ControlGameField(GameField gameField){
@@ -36,48 +37,26 @@ public class ControlGameField {
         }
         return status;
     }
+
     public void controlPuzzle(){
-       /* for( int row = 0; row < 9; row++){
-            for( int column = 0; column < 9; column++) {
-                System.out.print(gameField.getTile()[row][column].getNumber() + " ");
-            }
-            System.out.println();
-        }*/
         for(int row = 0; row < 9; row++){
             for(int column = 0; column < 9; column++) {
                 if (gameField.getTile()[row][column].getNumber() > 0){
-                    /*
-                    System.out.println("row = " + row);
-                    System.out.print("column = " + column);
-                    System.out.println();
-                    System.out.print("[" + (gameField.getTile()[row][column].getMark() - 1) + "][" + (gameField.getTile()[row][column].getNumber() - 1) + "] ==" + gameField.getTile()[row][column].getNumber());
-                    System.out.println();
-                    System.out.print(puzzle[ (gameField.getTile()[row][column].getMark() - 1) ][ (gameField.getTile()[row][column].getNumber() - 1) ] + "==" + gameField.getTile()[row][column].getNumber());
-                    System.out.println();
-                    System.out.println("=====================================================================================================================================================================");
-                    */
-                    if(puzzle[ (gameField.getTile()[row][column].getMark() - 1) ][ (gameField.getTile()[row][column].getNumber() - 1) ] ==  gameField.getTile()[row][column].getNumber()) {
-
-
+                    if(puzzle[ (gameField.getTile()[row][column].getMark() - 1) ][ (gameField.getTile()[row][column].getNumber() - 1) ] ==  gameField.getTile()[row][column].getNumber())
                         gameField.getTile()[row][column].setNumber(0, getClass());
-
-                    }
                     else
                         puzzle[ (gameField.getTile()[row][column].getMark() - 1) ][ (gameField.getTile()[row][column].getNumber() - 1) ] = gameField.getTile()[row][column].getNumber();
                 }
             }
         }
-        /*for(int row = 0; row < 9; row++){
-            for(int column = 0; column < 9; column++) {
-                System.out.print(puzzle[row][column] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();*/
     }
 
     public boolean insertToPuzzle(int row, int column, int wantNumber){
-        return puzzle[(gameField.getTile()[row][column].getMark() - 1)][wantNumber - 1] != wantNumber;
+        if(puzzle[(gameField.getTile()[row][column].getMark() - 1)][wantNumber - 1] != wantNumber){
+            puzzle[(gameField.getTile()[row][column].getMark() - 1)][wantNumber - 1] = wantNumber;
+            return true;
+        }
+        return false;
     }
 
     public boolean winGame(){
@@ -85,9 +64,10 @@ public class ControlGameField {
         for(int row = 0; row < 9; row++){
             for(int column = 0; column < 9; column++){
                 if((gameField.getTile()[row][column].getNumber() == 0) || (puzzle[row][column] == 0)) {
-                    status = false;
-                    break;
-                }else status = true;
+                    return false;
+                }else{
+                    status = true;
+                }
             }
         }
         if(status && control()){
@@ -95,4 +75,6 @@ public class ControlGameField {
         }
         return status;
     }
+
 }
+
