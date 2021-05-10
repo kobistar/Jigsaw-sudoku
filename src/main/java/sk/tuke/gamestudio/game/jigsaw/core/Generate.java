@@ -15,29 +15,6 @@ public class Generate {
         controlGameField = new ControlGameField(gameField);
     }
 
- /*   public void generatePlayground(){
-        int number;
-        for(int idx = 0; idx < 9; idx++){
-            for(int idx_two = 0; idx_two < 9; idx_two++){
-                number = generateNumber();
-                if(new ControlGameField(gameField).controlInput(idx, idx_two, number)){
-                    gameField.getTile()[idx][idx_two].generating(this, number);
-                    gameField.getTile()[idx][idx_two].setTileState(TileState.GENERATED);
-                }
-            }
-        }
-        if(numberCount > 0){
-            generatePlayground();
-        }
-    }*/
-/*
-    private int generateNumber(){
-        if(new Random().nextInt(100) <= 5){
-            return new Random().nextInt(9) + 1;
-        }
-        return 0;
-    }
-*/
     public void fieldOfTile(){
         for(int idx = 0; idx < 9; idx++){
             for(int idx_two = 0; idx_two < 9; idx_two++){
@@ -60,19 +37,10 @@ public class Generate {
             }
         }
     }
-
     public int getNumberCount() {
         return numberCount;
     }
-
     public void setNumberCount(int numberCount) {
         this.numberCount = numberCount;
     }
-    /*
-     private String chooseJigsaw(){
-//        new Random().nextInt(5)+1;
-//        String.format("jigsaw%d")
-        return "";
-    }
-     */
 }

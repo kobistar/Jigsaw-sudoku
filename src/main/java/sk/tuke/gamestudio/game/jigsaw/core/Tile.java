@@ -5,9 +5,7 @@ public class Tile {
     private int mark;
     private TileState tileState;
 
-    Tile(){
-        number = 0;
-    }
+    Tile(){ number = 0; }
 
     public void generating(Generate generate, int number) {
         if(number > 0){
@@ -16,17 +14,11 @@ public class Tile {
         }
     }
 
-    public void setMark(int mark) {
-        this.mark = mark;
-    }
+    public void setMark(int mark) { this.mark = mark; }
 
-    public int getNumber() {
-        return number;
-    }
+    public int getNumber() { return number; }
 
-    public int getMark() {
-        return mark;
-    }
+    public int getMark() { return mark; }
 
     public void setNumber(int number, Class caller) {
         if(caller == ControlGameField.class)
@@ -34,11 +26,7 @@ public class Tile {
         else if(number > 0)
             this.number = number;
     }
-    public void setTileState(TileState tileState){
-        this.tileState = tileState;
-    }
+    public void setTileState(TileState tileState){ this.tileState = tileState; }
 
-    public TileState getTileState() {
-        return tileState;
-    }
+    public TileState getTileState() { return tileState; }
 }

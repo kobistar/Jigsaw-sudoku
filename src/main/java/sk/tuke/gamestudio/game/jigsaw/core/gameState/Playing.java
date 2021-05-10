@@ -111,8 +111,6 @@ public class Playing implements GameState {
         System.out.println();
     }
 
-    private int toInt(char c){
-        return  (((int)c) - 65);
-    }
-
+    private int toInt(char c){ return  (((int)c) - 65); }
+    public ControlGameField getControlGameField() { return controlGameField; }
 }

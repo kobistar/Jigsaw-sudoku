@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<link rel="stylesheet" href="/css/screen.css"/>
+<head>
+  <meta charset="UTF-8">
+  <title>Gamestudio</title>
+</head>
+<body>
+<h1>JigSaw</h1>
+
+<a href="/jigsaw/again">Again</a><br>
+Current operation:
+<!--
+<span th:if="${@userController.logged}">
+Logged as: <span th:text="${@userController.loggedUser.login}"/><br/>
+</span>
+-->
+<a href = "/jigsaw/numberOne">1</a>
+<a href = "/jigsaw/numberTwo">2</a>
+<a href = "/jigsaw/numberThree">3</a>
+<a href = "/jigsaw/numberFour">4</a>
+<a href = "/jigsaw/numberFive">5</a>
+<a href = "/jigsaw/numberSix">6</a>
+<a href = "/jigsaw/numberSeven">7</a>
+<a href = "/jigsaw/numberEight">8</a>
+<a href = "/jigsaw/numberNine">9</a><br>
+<!--<span th:if="${@jigSawController.Winn}">winn
+<a href = "/jigsaw/winn">You winn!!!</a>
+</span>-->
+<!--<a href = "/jigsaw/gum">Gum</a><br>-->
+<span th:if="${@userController.logged}">
+Logged as: <span th:text="${@userController.loggedUser.login}"/><br/>
+</span>
+
+<span th:utext="${@jigSawController.GetHtmlField}"/>
+
+<div th:fragment="rate_us">
+  <h4 class="text-center">Rate us!</h4>
+  <div th:if="${@userController.loggedUser}" class="text-center">
+    <a href="/jigsaw/addRating?rating=1"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a href="/jigsaw/addRating?rating=2"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a href="/jigsaw/addRating?rating=3"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a href="/jigsaw/addRating?rating=4"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a href="/jigsaw/addRating?rating=5"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a><br>
+
+  </div>
+  <div class="text-center" th:if="${@userController.loggedUser == null}">
+    <a data-toggle="modal" data-target="#myModalLogin" ><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a data-toggle="modal" data-target="#myModalLogin"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a data-toggle="modal" data-target="#myModalLogin"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a data-toggle="modal" data-target="#myModalLogin"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+    <a data-toggle="modal" data-target="#myModalLogin"><img src="/images/ratingStar.png" style="width: 40px; height: 40px"/></a>
+  </div>
+  <br/>
+</div>
+
+<h3>AddComment</h3>
+<div th:fragment="comment_us">
+  <form action="/jigsaw/addComment" method="post">
+    <!--action="/comment?comment="-->
+
+    <div class="form-group">
+      <textarea id="comment" class="form-control" name="commentString" rows="5" placeholder="Here u can write your comment"></textarea><br/>
+    </div>
+    <div th:if="${@userController.loggedUser == null}">
+      <a class="btn btn-primary" data-toggle="modal" data-target="#myModalLogin" style="color: white">Submit</a>
+    </div>
+    <div th:if="${@userController.loggedUser}">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+
+<h2>Average rating:</h2>
+<span th:text="${rating}"></span></br>
+<div th:if="${@userController.loggedUser}">
+  <h2>Player Rating</h2>
+  <span th:text="${ratingPlayer}"></span>
+</div>
+<div th:replace="fragments::footer"/>
+
+
+
+</body>
+</html>

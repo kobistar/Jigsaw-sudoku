@@ -22,12 +22,8 @@ public class GameField{
     }
 
     public void action() throws CommentException, RatingException { gameState.action(); }
-
-    public Tile[][] getTile() {
-        return tile;
-    }
-
+    public Tile[][] getTile() { return tile; }
     public void setGameState(GameState gameState){ this.gameState = gameState; }
-
+    public GameState getGameState(){return gameState;}
     public int getScore(){ return 100 - (int)(System.currentTimeMillis() - startTime) / 1000; }
 }

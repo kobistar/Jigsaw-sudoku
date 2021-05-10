@@ -3,6 +3,7 @@ package sk.tuke.gamestudio.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 
 @Entity
 @NamedQueries({
@@ -11,14 +12,17 @@ import java.util.Date;
         @NamedQuery( name="Rating.getAverageRating",
                 query = "SELECT AVG (r.rating) FROM Rating r WHERE r.game =:game")
 })
+@IdClass(idrating.class)
 public class Rating implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    //   @Id
+    // @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // private int id;
 
+    @Id
     private String game;
-    private String username;
+    @Id
+    public String username;
     private int rating;
     private Date rated_On;
     public Rating() {}
@@ -62,18 +66,60 @@ public class Rating implements Serializable {
         this.rated_On = ratedon;
     }
 
-    public int getId() { return id; }
+    //  public int getId() { return id; }
 
-    public void setId(int id){ this.id = id;}
+    // public void setId(int id){ this.id = id;}
 
     @Override
     public String toString() {
         return "Score{" +
-                "id=" + id +
+                // "id=" + id +
                 ", game='" + game + '\'' +
                 ", username='" + username + '\'' +
                 ", rating=" + rating +
                 ", ratedOn=" + rated_On +
                 '}';
+    }
+}
+
+class idrating implements Serializable {
+    private String game;
+    private String username;
+
+    public idrating() {
+    }
+
+    public idrating(String game, String username) {
+        this.game = game;
+        this.username = username;
+    }
+
+    public String getGame() {
+        return game;
+    }
+
+    public void setGame(String game) {
+        this.game = game;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        idrating idrating = (idrating) o;
+        return Objects.equals(game, idrating.game) && Objects.equals(username, idrating.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(game, username);
     }
 }

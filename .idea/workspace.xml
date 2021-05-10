@@ -5,40 +5,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24225d6a-d2a4-49a3-a2d9-8bf5f598d480" name="Default Changelist" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/controller/JigSawController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/gamestudio.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.1Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.2Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.3Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.4Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.5Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.6Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.7Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.8Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.9Tile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/blackTile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/ratingStar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/getCommentScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/getScoreScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jigsaw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/score.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/consoleui/ConsoleUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/consoleui/ConsoleUi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/ControlGameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/ControlGameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/entity/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/entity/Rating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Generate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Generate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/TileState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/TileState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/Playing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/Playing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/core/gameState/WinnGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/entity/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/entity/Rating.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/entity/Score.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/jigsaw.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/CommentException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/CommentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/CommentServiceJDBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/GameStudioException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/RatingException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/RatingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/RatingServiceJDBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/ScoreException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/ScoreService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/game/jigsaw/service/ScoreServiceJDBC.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/TileState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/tuke/gamestudio/game/jigsaw/core/TileState.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +132,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTTP Request" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -68,13 +152,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/ScoreServiceJPA.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/ScoreServiceRestClient.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/CommentServiceRestClient.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/GameStudioServer.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/SpringClient.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/RatingService.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/RatingServiceRestClient.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/webservice/RatingServiceRest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/ScoreServiceRestClient.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/server/GameStudioServer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/RatingServiceRestClient.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/CommentServiceRestClient.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/service/RatingService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sk/tuke/gamestudio/SpringClient.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1qtWk4puGD2gZoCYNKZi3XpZYiG" />
   <component name="ProjectLevelVcsManager">
@@ -86,6 +170,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -99,6 +184,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -106,6 +192,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\simon\Desktop\gamestudio-4978-2\src\main\resources\static\images" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sk.tuke.gamestudio" />
     </key>
@@ -117,7 +206,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringClient">
+  <component name="RunManager" selected="Spring Boot.GameStudioServer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sk.tuke.gamestudio.Main" />
       <module name="gamestudio" />
@@ -127,17 +216,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,8 +253,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringClient" />
         <item itemvalue="Spring Boot.GameStudioServer" />
+        <item itemvalue="Spring Boot.SpringClient" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -203,6 +281,8 @@
       <workItem from="1618174578182" duration="32000" />
       <workItem from="1618174617636" duration="9000" />
       <workItem from="1618174631420" duration="56000" />
+      <workItem from="1620631083952" duration="3303000" />
+      <workItem from="1620634906021" duration="254000" />
     </task>
     <servers />
   </component>
@@ -210,6 +290,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
